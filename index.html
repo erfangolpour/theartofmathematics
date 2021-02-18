@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Mathematics</title>
+
+    <!-- <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="wrapper">
+        <!-- Image and graph -->
+        <div id="chartContainer">
+            <!-- <img class="art" src="img/king.png" /> -->
+            <div class="arrow left"></div>
+            <div id="chart" class="ct-chart ct-perfect-fourth"></div>
+            <div class="arrow right"></div>
+        </div>        
+        
+        <!-- Functions -->
+        <div class="functions-container">
+            <div class="function-filter-menu">
+                <div id="filter-all" class="active-filter">All</div>
+                <div id="filter-linear">Linear</div>
+                <div id="filter-quadratic">Quadratic</div>
+                <div id="filter-cubic">Cubic</div>
+                <div id="filter-abs">Absolute Value</div>
+                <div id="filter-squareroot">Square Root</div>
+                <div id="filter-log">Logarithmic</div>
+                <div id="filter-root">Other</div>
+            </div>
+
+            <div class="functions-wrapper">
+                <div class="functions-list">
+                    
+                    <!-- Function previews will go here -->
+                    
+                    <div id="unavailable-text"><p>No function of this type is available</p></div>
+                </div>
+                
+                <div class="splitter"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="function-details">
+        <div class="close-button" onclick="closeParent(event)">x</div>
+
+        <div class="function-explanation"></div>
+        <div class="function-graph"></div>
+    </div>
+
+    <div class="instructions">
+        <!-- <div class="close-button" onclick="closeParent(event)">X</div> -->
+
+        <h2 style="text-align: center; margin: 10px 0 35px;">The Art of Mathematics</h2>
+        <p style="font-size: 17px;">Welcome to "The Art of Mathematics". Before you move on, please take a moment to read the instructions:</p>
+        <ul>
+            <li>When you hover the mouse over a function in the preview panel, the corresponding function will be highlighted on the graph. This will help you to easily find a function.</li>
+            <li>Use the white arrows on the graph to change the picture, for now there are 2 graphs available.</li>
+            <li>Click on each function to see a more detailed discription about it. You can also gain some information about a function by hovering over it.</li>
+            <li>Even though the functions are all precisely calculated, the key points are <strong>NOT</strong> manually identified. There is a loop which goes through the domain of each function and tries to find 10 integral points at most (where x and y are both integers). Therefore, it is possible to encounter a function that has no key points.</li>
+            <br />
+            <p style="font-size: 17px;"><strong>Attention:</strong></p>
+            <li>Even though the website works in vertical screens, some of the components are <strong>NOT</strong> responsive. It is recommended to use a horizontal screen while you are in this website. Otherwise, you might face problems with function previews and detailed discriptions.</li>
+        </ul>
+        <button onclick="closeParent(event)">Continue</button>
+    </div>
+
+    <div class="blur-background"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
