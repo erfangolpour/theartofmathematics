@@ -4,7 +4,7 @@
 
 Available at https://theartofmathematics.github.io
 
-Welcome to "The Art of Mathematics". This project is influenced by [Mr. Evgeny Tuev](http://pattisonhighschool.ca/teachers/mr-evgeny-tuev/) and developed by Erfan Golpour. Before you move on, please take a moment to read the instructions:
+Welcome to __The Art of Mathematics__. This project is influenced by [Mr. Evgeny Tuev](http://pattisonhighschool.ca/teachers/mr-evgeny-tuev/) and developed by Erfan Golpour. It tries to show how mathematical functions appear in nature and industry. Before you move on, please take a moment to read the instructions:
   
 * When you hover the mouse over a function in the preview panel, the corresponding function will be highlighted on the graph to help you easily find a function.
 * Use the white arrows on the main picture to switch between the sets of functions. For now there are 2 sets available.
