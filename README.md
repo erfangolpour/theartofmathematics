@@ -1,5 +1,7 @@
 ## The Art of Mathematics
 
+![Screenshot of the project](screenshots/1.png)
+
 Welcome to "The Art of Mathematics". This project is  Before you move on, please take a moment to read the instructions:
   
 * When you hover the mouse over a function in the preview panel, the corresponding function will be highlighted on the graph to help you easily find a function.
