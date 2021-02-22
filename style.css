@@ -375,7 +375,7 @@ body {
 }
 
 .instructions ul {
-    padding: 0;
+    padding-right: 8px;
 }
 
 .instructions ul li {
