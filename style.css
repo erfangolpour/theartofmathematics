@@ -383,7 +383,7 @@ body {
     font-size: 13px;
 }
 
-.credits:nth-child(2) {
+.credits:nth-child(1) {
     text-align: right;
 }
 
@@ -457,7 +457,7 @@ body {
         padding: 0;
     }
     
-    .credits:nth-child(2) {
+    .credits:nth-child(1) {
         text-align: left;
     }
 
