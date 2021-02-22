@@ -375,7 +375,7 @@ body {
 }
 
 .instructions ul {
-    padding-right: 8px;
+    padding-right: 6px;
 }
 
 .instructions ul li {
@@ -434,7 +434,11 @@ body {
         width: 100%;
         margin: 0;
     }
-
+    
+    .instructions ul {
+        padding: 0;
+    }
+    
     .instructions::after {
         display: none;
     }
