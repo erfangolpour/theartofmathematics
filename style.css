@@ -371,6 +371,7 @@ body {
     top: 0;
     right: 0;
     width: 100%;
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
