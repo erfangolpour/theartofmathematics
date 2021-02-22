@@ -14,4 +14,7 @@ Welcome to __The Art of Mathematics__. This project is influenced by [Mr. Evgeny
 __Attention:__
 Since the website is primirily designed for landscape frames, it is recommended to use a horizontal screen while you are using the website. Otherwise, you might face some disproportions although the contents will remain the same.
 
+
+Many thanks to [MathJax](https://github.com/mathjax/MathJax) and [Chartist.js](https://github.com/gionkunz/chartist-js) for their beautiful libraries.
+
 **Enjoy!**
