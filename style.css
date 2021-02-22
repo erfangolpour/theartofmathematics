@@ -431,7 +431,7 @@ body {
     }
     
     .credits {
-        display: none;
+        display: none !important;
     }
 
     .instructions {
