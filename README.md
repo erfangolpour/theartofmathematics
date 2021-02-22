@@ -1,4 +1,4 @@
-## The Art of MAthematics
+## The Art of Mathematics
 
 Welcome to "The Art of Mathematics". This project is  Before you move on, please take a moment to read the instructions:
   
