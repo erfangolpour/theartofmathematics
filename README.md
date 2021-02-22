@@ -1,4 +1,4 @@
-## The Art of Mathematics
+# The Art of Mathematics
 
 ![Screenshot of the project](screenshots/1.png)
 
