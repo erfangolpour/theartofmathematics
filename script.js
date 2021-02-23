@@ -42,28 +42,28 @@ function find_range(f) {
 }
 
 king_functions = [
-    {title: "Linear", equation: "0.6x + 18", evaluate: x => {return 0.6*x+18}, domain: [-8, 12, 1], tension: 0},
-    {title: "Linear", equation: "0.6x - 17", evaluate: x => {return 0.6*x-17}, domain: [-9, 9, 1], tension: 0},
-    {title: "Absolute Value", equation: "\\left\\lvert x + 32.5 \\right\\rvert + 26", evaluate: x => {return Math.abs(x+32.5)+26}, domain: [-45, -19, 1], tension: 0},
-    {title: "Absolute Value", equation: "-\\left\\lvert x - 33 \\right\\rvert - 24", evaluate: x => {return -Math.abs(x-33)-24}, domain: [20, 47, 1], tension: 0},
-    {title: "Quadratic", equation: "0.006 \\times x^2 - 28", evaluate: x => {return 0.006*Math.pow(x, 2)-28}, domain: [18, 48, 1], tension: 2},
-    {title: "Cubic", equation: "0.08x^3", evaluate: x => {return Math.pow(0.08*x, 3)}, domain: [-25, 25, 1], tension: 2},
-    {title: "Square Root", equation: "\\sqrt{8 \\times (x+50)}+11", evaluate: x => {return Math.sqrt(8*(x+50))+11}, domain: [-47, -17, 1], tension: 2},
-    {title: "Square Root", equation: "\\sqrt{55 \\times (x-5)}", evaluate: x => {return Math.sqrt(55*(x-5))}, domain: [5, 16, 1], tension: 2},
-    {title: "Logarithmic", equation: "21 \\times \\log_{0.1} -(x + 4)", evaluate: x => {return 21*Math.log(-(x+4))/Math.log(0.1)}, domain: [-17, -4, 1], tension: 2},
-    {title: "Constant", equation: "48", evaluate: x => {return 48}, domain: [-23, 30, 1], tension: 0},
-    {title: "Constant", equation: "-46", evaluate: x => {return -46}, domain: [-30, 23, 1], tension: 0},
-    {title: "Half-Circle", equation: "\\sqrt{7^2 - (x + 26)^2} + 38", evaluate: x => {return Math.sqrt(49-(x+26)**2)+38}, domain: [-32, -19, 1], tension: 2},
+    {title: "Linear", equation: "0.6x + 18", evaluate: x => {return 0.6*x+18}, domain: [-8, 12, 1], a: 0.6, b: 1, h: 0, k: 18, tension: 0},
+    {title: "Linear", equation: "0.6x - 17", evaluate: x => {return 0.6*x-17}, domain: [-9, 9, 1], a: 0.6, b: 1, h: 0, k: -17, tension: 0},
+    {title: "Absolute Value", equation: "\\left\\lvert x + 32.5 \\right\\rvert + 26", evaluate: x => {return Math.abs(x+32.5)+26}, domain: [-45, -19, 1], a: 1, b: 1, h: -32.5, k: 26, tension: 0},
+    {title: "Absolute Value", equation: "-\\left\\lvert x - 33 \\right\\rvert - 24", evaluate: x => {return -Math.abs(x-33)-24}, domain: [20, 47, 1], a: -1, b: 1, h: 33, k: -24, tension: 0},
+    {title: "Quadratic", equation: "0.006 \\times x^2 - 28", evaluate: x => {return 0.006*Math.pow(x, 2)-28}, domain: [18, 48, 1], a: 0.006, b: 1, h: 0, k: -28, tension: 2},
+    {title: "Cubic", equation: "(0.08x)^3", evaluate: x => {return Math.pow(0.08*x, 3)}, domain: [-25, 25, 1], a: 1, b: 1/0.08, h: 0, k: 0, tension: 2},
+    {title: "Square Root", equation: "\\sqrt{8 \\times (x+50)}+11", evaluate: x => {return Math.sqrt(8*(x+50))+11}, domain: [-47, -17, 1], a: 1, b: 1/8, h: -50, k: 11, tension: 2},
+    {title: "Square Root", equation: "\\sqrt{55 \\times (x-5)}", evaluate: x => {return Math.sqrt(55*(x-5))}, domain: [5, 16, 1], a: 55, b: 1, h: 5, k: 0, tension: 2},
+    {title: "Logarithmic", equation: "21 \\times \\log_{0.1} -(x + 4)", evaluate: x => {return 21*Math.log(-(x+4))/Math.log(0.1)}, domain: [-17, -4, 1], a: 21, b: -1, h: -4, k: 0, tension: 2},
+    {title: "Constant", equation: "48", evaluate: x => {return 48}, domain: [-23, 30, 1], a: 1, b: 1, h: 0, k: 48, tension: 0},
+    {title: "Constant", equation: "-46", evaluate: x => {return -46}, domain: [-30, 23, 1], a: 1, b: 1, h: 0, k: -46, tension: 0},
+    {title: "Half-Circle", equation: "\\sqrt{7^2 - (x + 26)^2} + 38", evaluate: x => {return Math.sqrt(49-(x+26)**2)+38}, domain: [-32, -19, 1], a: 1, b: 1, h: -26, k: 38, tension: 2},
 ]
 
 house_functions = [
-    {title: "Linear", equation: "0.6x + 18", evaluate: x => {return 1.2*x-45}, domain: [47, 68, 1], tension: 0},
-    {title: "Linear", equation: "0.02x - 15", evaluate: x => {return 0.02*x-15}, domain: [-45, 4, 1], tension: 0},
-    {title: "Linear", equation: "0.17x - 42", evaluate: x => {return 0.17*x-42}, domain: [-66, 5, 1], tension: 0},
-    {title: "Linear", equation: "0.6x + 42", evaluate: x => {return 0.36*x-53}, domain: [-10, 31, 1], tension: 0},
-    {title: "Absolute Value", equation: "-\\left\\lvert 0.9 \\times (x - 14) \\right\\rvert + 52", evaluate: x => {return -Math.abs(0.9*(x-14))+52}, domain: [-10, 36, 1], tension: 0},
-    {title: "Absolute Value", equation: "-\\left\\lvert 0.9 \\times (x + 19) \\right\\rvert + 35", evaluate: x => {return -Math.abs(0.9*(x+19))+35}, domain: [-34, -3, 1], tension: 0},
-    {title: "Quadratic", equation: "-0.03 \\times (x - 16)^2 - 19", evaluate: x => {return -0.03*Math.pow(x-16, 2)-19}, domain: [7, 27, 1], tension: 2},
+    {title: "Linear", equation: "0.6x + 18", evaluate: x => {return 1.2*x-45}, domain: [47, 68, 1], a: 0.6, b: 1, h: 0, k: 18, tension: 0},
+    {title: "Linear", equation: "0.02x - 15", evaluate: x => {return 0.02*x-15}, domain: [-45, 4, 1], a: 0.02, b: 1, h: 0, k: -15, tension: 0},
+    {title: "Linear", equation: "0.17x - 42", evaluate: x => {return 0.17*x-42}, domain: [-66, 5, 1], a: 0.17, b: 1, h: 0, k: -42, tension: 0},
+    {title: "Linear", equation: "0.6x + 42", evaluate: x => {return 0.36*x-53}, domain: [-10, 31, 1], a: 0.6, b: 1, h: 0, k: 42, tension: 0},
+    {title: "Absolute Value", equation: "-\\left\\lvert 0.9 \\times (x - 14) \\right\\rvert + 52", evaluate: x => {return -Math.abs(0.9*(x-14))+52}, domain: [-10, 36, 1], a: -1, b: 1/0.9, h: 14, k: 52, tension: 0},
+    {title: "Absolute Value", equation: "-\\left\\lvert 0.9 \\times (x + 19) \\right\\rvert + 35", evaluate: x => {return -Math.abs(0.9*(x+19))+35}, domain: [-34, -3, 1], a: -1, b: 1/0.9, h: -19, k: 35, tension: 0},
+    {title: "Quadratic", equation: "-0.03 \\times (x - 16)^2 - 19", evaluate: x => {return -0.03*Math.pow(x-16, 2)-19}, domain: [7, 27, 1], a: -0.03, b: 1, h: 16, k: -19, tension: 2},
 ]
 
 available_charts = [
@@ -149,10 +149,25 @@ function add_function_preview(f) {
         discriptionNode.innerHTML += `<div>General Form: <span style="color: #ccc;">\\(${general_forms[f.title]}\\)</span></div>`
         discriptionNode.innerHTML += `<div>Domain: <span style="color: #ccc">\\(${f.domain[0]} \\leqslant x \\leqslant ${f.domain[1]}\\)</span></div>`
         discriptionNode.innerHTML += `<div>Range: <span style="color: #ccc">\\(${function_range[0]} \\leqslant y \\leqslant ${function_range[1]}\\)</span></div>`
+        transformations_html = '<div>Transformations:</div><ul style="padding-left: 16px; margin: 0; color: #ccc">'
+        if (Math.abs(f.a) != 1) {transformations_html += `<li>Vertical stretch by a factor of ${Math.abs(f.a)}</li>`}
+        if (Math.abs(f.b) != 1) {transformations_html += `<li>Horizontal stretch by a factor of ${Math.round((Math.abs(f.b) + Number.EPSILON) * 10) / 10}</li>`}
+        if (f.a < 0) {transformations_html += `<li>Vertical reflection in the x-axis</li>`}
+        if (f.b < 0) {transformations_html += `<li>Horizontal reflection in the y-axis</li>`}
+        if (f.h || f.k) {transformations_html += '<li>Translation of '}
+        if (f.h) {transformations_html += `${Math.abs(f.h)} unit${Math.abs(f.k) == 1 ? '' : 's'} to the ${(f.h > 0) ? 'right' : 'left'}`}
+        if (f.k) {transformations_html += `${f.h ? ' and ' : ''}${Math.abs(f.k)} unit${Math.abs(f.k) == 1 ? '' : 's'} ${(f.k > 0) ? 'up' : 'down'}`}
+        if (f.h || f.k) {transformations_html += '</li>'}
+        if (f.a == 1 && f.b == 1 && !f.h && !f.k) {
+            transformations_html += "No transformations detected in the equation."
+        }
+        transformations_html += "</ul>"
+        discriptionNode.innerHTML += transformations_html
+        
         keypoints_html = '<div>Key Points: '
         if (keypoints.length) {
             keypoints.forEach(p => {
-                keypoints_html += `<span style="padding: 6px 8px; margin-right: 10px; background-color: #444; color: #ccc; border-radius: 5px;">${p[0]}, ${p[1]}</span>`
+                keypoints_html += `<div style="display: inline-flex; justify-content: center; align-items: center; width: 68px; height: 35px; margin-right: 10px; background-color: #444; color: #ccc; border-radius: 5px;">${p[0]}, ${p[1]}</div>`
             })
             if (keypoints_overflow) {keypoints_html += "..."}
         } else {
