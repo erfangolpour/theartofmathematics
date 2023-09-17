@@ -4,7 +4,7 @@
 
 #### Available at https://theartofmathematics.github.io
 
-Welcome to __The Art of Mathematics__. This project is influenced by [Mr. Evgeny Tuev](http://pattisonhighschool.ca/teachers/mr-evgeny-tuev/) and developed by [Erfan Golpour](https://www.linkedin.com/in/erfan-golpour-9739341b7/). The project objective is to show how mathematical functions appear in art and nature. Before you move on, please take a moment to read the instructions:
+Welcome to __The Art of Mathematics__. This project is influenced by [Mr. Evgeny Tuev](http://pattisonhighschool.ca/teachers/mr-evgeny-tuev/) and developed by [Erfan Golpour](https://www.linkedin.com/in/erfan-golpour-9739341b7/). The main objective is to demonstrate how mathematical functions naturally appear in art and nature. Before you move on, please take a moment to read the instructions:
   
 * When you hover the mouse over a function in the preview panel, the corresponding function will be highlighted on the graph to help you easily find a function.
 * Use the white arrows on the main picture to switch between the sets of functions. For now there are 2 sets available.
@@ -15,6 +15,6 @@ __Attention:__
 Since the website is primirily designed for landscape frames, it is recommended to use a horizontal screen while you are using the website. Otherwise, you might face some disproportions although the contents will remain the same.
 
 
-Many thanks to [MathJax](https://github.com/mathjax/MathJax) and [Chartist.js](https://github.com/gionkunz/chartist-js) for their beautiful libraries.
+Many thanks to [MathJax](https://github.com/mathjax/MathJax) and [Chartist.js](https://github.com/gionkunz/chartist-js) for their wonderful libraries.
 
 **Enjoy!**
